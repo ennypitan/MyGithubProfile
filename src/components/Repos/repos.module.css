@@ -11,6 +11,7 @@
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   margin: 1.5rem 0;
   padding: 1rem;
+  /* position: relative; */
 }
 .repo__item:hover {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -19,6 +20,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  bottom: 0;
   span {
     padding: 0.2rem;
     border-radius: 7px;

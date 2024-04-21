@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   background-color: #fbfbfb;
-  color: #292019;
+  color: rgb(105, 105, 103);
   overflow-x: hidden;
   position: relative;
 }

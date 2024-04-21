@@ -17,3 +17,7 @@
   background-color: #abf600;
   margin-right: 0.3rem;
 }
+.active {
+  /* border: 2px solid #abf600; */
+  background-color: #5e8407e6;
+}

@@ -34,14 +34,23 @@ function Pagination({ numberOfPages, currentPage, setCurrentPage }) {
     <div>
       <section className={styles.pagination}>
         <div onClick={prevPage} className={disabledPrev ? "disabled" : "prev"}>
-          <FaArrowLeft />
+          <FaArrowLeft
+            style={{
+              backgroundColor: "#abf600",
+              width: "1.5rem",
+              height: "1.5rem",
+              marginRight: "0.3rem",
+            }}
+          />
         </div>
         <div className={styles["pagination__num"]}>
           {pageNum.map((num) => (
             <div key={num}>
               <p
                 onClick={() => setCurrentPage(num)}
-                className={styles["pagination__child"]}
+                className={`${styles.pagination__child} ${
+                  currentPage === num ? styles.active : ""
+                }`}
               >
                 {num}
               </p>
@@ -49,7 +58,13 @@ function Pagination({ numberOfPages, currentPage, setCurrentPage }) {
           ))}
         </div>
         <div onClick={nextPage} className={disabledNext ? "disabled" : "next"}>
-          <FaArrowRight />
+          <FaArrowRight
+            style={{
+              backgroundColor: "#abf600",
+              width: "1.5rem",
+              height: "1.5rem",
+            }}
+          />
         </div>
       </section>
     </div>
