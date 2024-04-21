@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid rgb(77, 76, 76);
+  padding: 1rem 5%;
+  span {
+    margin-right: 0.7rem;
+    font-weight: 700;
+  }
+}
+.nav-menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+  width: 50%;
+}
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--color-primary-900);
+  text-decoration: underline;
+}
+.img__holder {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.7rem;
+
+  img {
+    border-radius: 50%;
+    border: 2px solid #abf600;
+  }
+}

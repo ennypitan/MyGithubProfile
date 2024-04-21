@@ -1,0 +1,37 @@
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
+  margin: auto;
+  position: relative;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.overview__card1 {
+  flex-basis: 37%;
+  flex-grow: 1;
+}
+.overview__card {
+  flex-basis: 57%;
+  flex-grow: 1;
+}
+.search__container {
+  position: absolute;
+  width: 75%;
+  top: -4rem;
+  margin: 0.7rem 0;
+  input {
+    width: 70%;
+    padding: 0.7rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border: none;
+  }
+}

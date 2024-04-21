@@ -1,0 +1,17 @@
+.error__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.git__btn {
+  background-color: #abf600;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 17px;
+  border: none;
+  margin-right: 1.5rem;
+}
+.git__btn:hover {
+  background-color: #5e8407e6;
+}

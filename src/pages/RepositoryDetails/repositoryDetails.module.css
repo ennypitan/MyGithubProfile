@@ -1,0 +1,49 @@
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
+  margin: auto;
+  position: relative;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 15px;
+}
+.repo__info__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+.repo__info__tag {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 600;
+  padding: 0.5rem;
+  flex-basis: 30%;
+  flex-grow: 1;
+  background-color: #abf600;
+}
+.git__btn {
+  background-color: #abf600;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 17px;
+  border: none;
+  margin-right: 1.5rem;
+}
+.git__btn:hover {
+  background-color: #5e8407e6;
+}
