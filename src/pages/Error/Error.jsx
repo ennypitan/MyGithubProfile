@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+import Header from "../../components/Header/Header";
 import { useNavigate } from "react-router-dom";
 import styles from "./error.module.css";
 
