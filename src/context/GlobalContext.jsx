@@ -16,7 +16,6 @@ export const GlobalProvider = ({ children }) => {
 
   const url = "https://api.github.com";
   const token = import.meta.env.VITE_APP_GITHUB_API_KEY;
-  console.log(token);
 
   // Fetches Profile/User details
   const myProfile = async () => {
