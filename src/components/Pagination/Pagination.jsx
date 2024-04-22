@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./pagination.module.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
-// import { ReactComponent as LeftArrow } from "../assets/left-arrow.svg";
-// import { ReactComponent as RightArrow } from "../assets/right-arrow.svg";
 
 function Pagination({ numberOfPages, currentPage, setCurrentPage }) {
   const [disabledPrev, setDisabledPrev] = useState(true);
@@ -31,10 +29,11 @@ function Pagination({ numberOfPages, currentPage, setCurrentPage }) {
     }
   }, [currentPage, numberOfPages]);
   return (
-    <div>
-      <section className={styles.pagination}>
+    <div aria-label="pagination container">
+      <section className={styles.pagination} aria-label="pagination section">
         <div onClick={prevPage} className={disabledPrev ? "disabled" : "prev"}>
           <FaArrowLeft
+            aria-label="arrow left"
             style={{
               backgroundColor: "#abf600",
               width: "1.5rem",
@@ -43,7 +42,7 @@ function Pagination({ numberOfPages, currentPage, setCurrentPage }) {
             }}
           />
         </div>
-        <div className={styles["pagination__num"]}>
+        <div className={styles.pagination__num} aria-label="page number">
           {pageNum.map((num) => (
             <div key={num}>
               <p
@@ -59,6 +58,7 @@ function Pagination({ numberOfPages, currentPage, setCurrentPage }) {
         </div>
         <div onClick={nextPage} className={disabledNext ? "disabled" : "next"}>
           <FaArrowRight
+            aria-label="arrow right"
             style={{
               backgroundColor: "#abf600",
               width: "1.5rem",

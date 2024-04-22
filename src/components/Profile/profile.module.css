@@ -24,7 +24,11 @@
     width: 100%;
 
     span {
-      flex-basis: 20%;
+      display: flex;
+      align-items: center;
+      flex-basis: 30%;
+      font-size: 14px;
+      border: 1px solid red;
     }
   }
 }
