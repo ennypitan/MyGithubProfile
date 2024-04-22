@@ -33,12 +33,12 @@ This project is an implementation of a web application using the GitHub API to f
 
 #### Technologies Used
 
-**React.js:** Frontend library for building user interfaces.
-**GitHub API:** Access GitHub data such as repositories and repository details.
-**React Router:** Handle routing and nested routes within the application.
-**Error Boundary:** Implement error boundaries to catch and display errors.
-**VanillaCSS:** Structure and style the web pages using style component
-**JavaScript (ES6+):** Programming language for application logic.
+- **React.js:** Frontend library for building user interfaces.
+- **GitHub API:** Access GitHub data such as repositories and repository details.
+- **React Router:** Handle routing and nested routes within the application.
+- **Error Boundary:** Implement error boundaries to catch and display errors.
+- **VanillaCSS:** Structure and style the web pages using style component
+- **JavaScript (ES6+):** Programming language for application logic.
 
 #### Installation and Setup
 
