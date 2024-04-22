@@ -58,4 +58,12 @@
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+  .search__container {
+    top: -4rem;
+    right: -25%;
+    margin: 0.7rem 0;
+    input {
+      width: 50%;
+    }
+  }
 }
