@@ -1,7 +1,7 @@
 .pagination {
   position: fixed;
   bottom: 1rem;
-  right: 4rem;
+  left: 4rem;
   display: flex;
 }
 .pagination__num {

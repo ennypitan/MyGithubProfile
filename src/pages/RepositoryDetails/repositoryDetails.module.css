@@ -47,3 +47,10 @@
 .git__btn:hover {
   background-color: #5e8407e6;
 }
+/* Media Query */
+@media screen and (max-width: 480px) and (min-width: 320px) {
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+}
