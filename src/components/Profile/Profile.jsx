@@ -27,7 +27,7 @@ function Profile({ profile }) {
                 {profile.followers} Follower
               </span>
               <span>
-                <FaUserPlus style={{ marginRight: "0.5rem" }} />{" "}
+                <FaUserPlus style={{ marginRight: "0.5rem" }} />
                 {profile.following} Following
               </span>
               <span>
@@ -37,7 +37,7 @@ function Profile({ profile }) {
             </div>
             <div className={styles.info__row}>
               <span>
-                <FaFileCode style={{ marginRight: "0.5rem" }} />{" "}
+                <FaFileCode style={{ marginRight: "0.5rem" }} />
                 {profile.public_gists} Public Gists
               </span>
               <span>

@@ -1,13 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./repos.module.css";
-// import { ReactComponent as ExternalLink } from "../assets/external-link.svg";
-// import { ReactComponent as Fork } from "../assets/GitFork.svg";
-// import { ReactComponent as Star } from "../assets/Star.svg";
 
 function Repos({ currentRepo, searchTerm }) {
   return (
-    <div className={styles["repo__container"]}>
+    <div className={styles["repo__container"]} aria-label="repo Section">
       {currentRepo
         .filter((repo) => {
           if (searchTerm == "") {
@@ -20,7 +17,7 @@ function Repos({ currentRepo, searchTerm }) {
         })
         .map((repo) => (
           <Link key={repo.id} to={`/repo/${repo.name}`}>
-            <div className={styles["repo__item"]}>
+            <div className={styles.repo__item} aria-label="repo item">
               <h3>{repo.name}</h3>
               <span className={styles["repo__desc"]}>{repo.description}</span>
               <div className={styles["repo__under__info"]}>
