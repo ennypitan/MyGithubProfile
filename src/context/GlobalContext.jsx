@@ -15,8 +15,8 @@ export const GlobalProvider = ({ children }) => {
   }, []);
 
   const url = "https://api.github.com";
-  // const token = import.meta.env.VITE_GITHUB_API_KEY;
 
+  // Fetches Profile/User details
   const myProfile = async () => {
     try {
       const response = await fetch(`${url}/users/ennypitan`);
@@ -28,6 +28,7 @@ export const GlobalProvider = ({ children }) => {
     }
   };
 
+  // Fetches Repositories
   const myRepo = async () => {
     try {
       const response = await fetch(`${url}/users/ennypitan/repos`);

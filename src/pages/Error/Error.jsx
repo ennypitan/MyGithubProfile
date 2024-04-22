@@ -12,7 +12,10 @@ const Error = () => {
   return (
     <>
       <Header />
-      <div className={styles["error__container"]}>
+      <div
+        className={styles.error__container}
+        aria-label="error page container"
+      >
         <h1 style={{ fontSize: "10rem" }}>404</h1>
         <h3>This page does not exist</h3>
         <button className={styles["git__btn"]} onClick={goBack}>

@@ -8,10 +8,6 @@ import { FaCircleNotch } from "react-icons/fa";
 import { MdVisibilityOff } from "react-icons/md";
 import { MdDangerous } from "react-icons/md";
 
-// import { ReactComponent as Github } from "../assets/GithubLogo.svg";
-// import { ReactComponent as Link } from "../assets/link.svg";
-// import { ReactComponent as Loader } from "../assets/loader.svg";
-
 function RepositoryDetails() {
   const { Id } = useParams();
   const [repo, setRepo] = useState({});
@@ -25,7 +21,6 @@ function RepositoryDetails() {
   };
 
   const url = "https://api.github.com";
-  // const token = import.meta.env.VITE_GITHUB_API_KEY;
 
   useEffect(() => {
     fetchRepo();
@@ -39,16 +34,12 @@ function RepositoryDetails() {
     setLoading(false);
   };
 
-  // const convertDate = (createdAt) => {
-  //   const formattedDate = new Date(createdAt).toLocaleString();
-  //   return formattedDate;
-  // };
-
   if (loading) return <div className="loader"></div>;
 
   return (
     <div
       className={`${styles["flex-row"]} ${styles["overview__details__container"]}`}
+      aria-label="Single repo container"
     >
       <div className={styles["flex-container"]}>
         <div className="repo">
