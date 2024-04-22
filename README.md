@@ -54,4 +54,4 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 
 #### Credits
 
-This project is created by **Ennypitan Adekoya** as a Second Semester Project at **AltSchool Africa School of Ebgineering**
+This project was developed by **Ennypitan Adekoya** as part of the Second Semester Project at **AltSchool Africa School of Engineering**.
