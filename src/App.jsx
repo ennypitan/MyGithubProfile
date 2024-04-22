@@ -4,6 +4,7 @@ import Overview from "./pages/Overview/Overview";
 import RepositoryDetails from "./pages/RepositoryDetails/RepositoryDetails";
 import { GlobalProvider } from "./context/GlobalContext";
 import Error from "./pages/Error/Error";
+import ErrorBoundary from "./components/ErrorBoundary";
 // import NavBar from "./Components/Navbar/NavBar";
 
 const router = createBrowserRouter([
@@ -25,9 +26,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <GlobalProvider>
-      <RouterProvider router={router} />
-    </GlobalProvider>
+    <ErrorBoundary>
+      <GlobalProvider>
+        <RouterProvider router={router} />
+      </GlobalProvider>
+    </ErrorBoundary>
   );
 }
 
