@@ -1,13 +1,16 @@
+// vite.config.js
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import dotenv from "dotenv";
 
-// https://vitejs.dev/config/
+// Load environment variables from .env files
+dotenv.config();
+
 export default defineConfig({
   plugins: [react()],
   define: {
-    "process.env.VITE_GITHUB_API_KEY": JSON.stringify(
-      process.env.VITE_GITHUB_API_KEY
+    "process.env.VITE_APP_GITHUB_API_KEY": JSON.stringify(
+      process.env.VITE_APP_GITHUB_API_KEY
     ),
   },
 });
